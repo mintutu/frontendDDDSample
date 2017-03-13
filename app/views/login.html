@@ -1,0 +1,20 @@
+<div id="login-page">
+	<div class="login container-fluid">
+		<h1 class="logo">BBS</h1>
+		<div class="card card-container">
+			<h2>{{'login.title' | translate}}</h2>
+			<div class="alert alert-danger alert-dismissable" role="alert" ng-show="msg.length > 0">
+				<button class="close" aria-hidden="true" type="button" ng-click="msg = '">x</button>
+				{{msg}}
+			</div>
+			<form class="form-signin" ng-submit="processLogin()">
+				<input type="email" class="form-control" placeholder="{{'enter.your.email' | translate}}" required autofocus 
+				ng-model="email">
+				<input type="password" class="form-control" placeholder="{{'enter.your.password' | translate}}" required 
+				ng-model="password">
+				<button class="btn btn-primary btn-block btn-login" type="submit">{{'login.title' | translate}}</button>
+			</form>
+			<a href="test"></a>
+		</div>
+	</div>
+</div>
