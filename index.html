@@ -1,14 +1,35 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 	<title update-title></title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+	<link rel="stylesheet" media="screen" href="./app/views/assets/stylesheets/bootstrap.min.css">
+	<link rel="stylesheet" media="screen" href="./app/views/assets/stylesheets/main.css">
+	<link rel="stylesheet" media="screen" href="./app/views/assets/stylesheets/material.min.css">
+	<link rel="stylesheet" media="screen" href="./app/views/assets/stylesheets/ripples.min.css">
+	<link rel="stylesheet" media="screen" href="./app/views/assets/stylesheets/roboto.min.css">
+	<link rel="stylesheet" media="screen" href="./app/views/assets/stylesheets/layout.css">
+
 	<script type="text/javascript" src="./node_modules/angular/angular.js"></script>
 	<script type="text/javascript" src="./node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+	<script type="text/javascript" src="./bower_components/angular-translate/angular-translate.js"></script>
+	<script type="text/javascript" src="./bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
 	<script type="text/javascript" src="./app/app.js"></script>
+	<script type="text/javascript" src="./app/applications/controllers/Controller.js.js"></script>
+	<script type="text/javascript" src="./app/applications/controllers/AuthController.js"></script>
+	<script type="text/javascript" src="./app/applications/controllers/UserController.js"></script>
+	<script type="text/javascript" src="./app/infrastructures/i18n/translations.en.js"></script>
+
 	<base href="/"/>
 </head>
 <body ng-app="bbs">
-
+	<div>
+		<div ng-intro-options="introOptions" ng-intro-method="startIntro"
+		 ng-intro-onexit="exitIntro" ng-intro-oncomplete="completeIntro" ui-view>
+		</div>
+		<body-foot></body-foot>
+	</div>
 </body>
 </html>

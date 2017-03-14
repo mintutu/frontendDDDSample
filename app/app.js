@@ -1,11 +1,12 @@
-var bbs = angular.module('bbs', ['ui.router']);
+const bbs = angular.module('bbs', ['ui.router', 'pascalprecht.translate']);
 
 bbs.apiPrefix = '/api'
 
-bbs.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
+bbs.config(['$stateProvider', '$urlRouterProvider', '$translateProvider', function($stateProvider, $urlRouterProvider
+	,$translateProvider) {
 
-	$urlRouterProvider.otherwise('/');
-	let states = [
+    $urlRouterProvider.otherwise('/');
+	var states = [
 		{
 			name: 'login',
 			url: '/',
@@ -18,4 +19,9 @@ bbs.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
 	states.forEach(function(state) {
 		$stateProvider.state(state);
 	});
+
+    $translateProvider
+        .translations('en', translations)
+        .preferredLanguage('en')
+        .useSanitizeValueStrategy('escape');
 }]);

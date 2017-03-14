@@ -14,5 +14,10 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "angular-translate": "^2.15.0",
+    "angular-translate-loader-static-files": "^2.15.0",
+    "angular-translate-loader-url": "^2.15.0"
+  }
 }

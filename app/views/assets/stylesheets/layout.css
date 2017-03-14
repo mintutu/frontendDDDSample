@@ -1,0 +1,51 @@
+@import url("bootstrap.min.css") screen, projection;
+@import url("roboto.min.css") screen, projection;
+@import url("material.min.css") screen, projection;
+@import url("ripples.min.css") screen, projection;
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4{font-family:Meiryo, "MS Gothic", "Roboto", sans-serif; color:#222; font-size:12px;}
+body{background:#fff none;}
+.btn{border-radius:4px;}
+ol, ul, ol li, ul li {
+    list-style-type: none;
+	padding:0;
+	margin:0;
+}
+.alert {
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+.alert-danger {
+    background: #fcefee;
+    color: #343f4b;
+    border: 1px solid #ff503f;
+}
+.btn{padding:8px 15px;}
+.alert-dismissable .close, .alert-dismissible .close{right:-8px;}
+#login-page{background:#00cdcf none;}
+#login-page .logo, #header .logo{background:url(../images/logo.png) no-repeat 20px 50%; margin:20px;text-indent:-9999em}
+#header .logo{margin:0; min-width:188px; background-position:0 50%;}
+#login-page .logo a, #header .logo a{display:block; min-height:30px;}
+#header .logo a{min-height:75px;}
+#login-page .card-container{background:#fff none; max-width:410px; margin:10% auto 0; padding:20px 40px 30px; text-align:center; display:block;}
+#login-page .card-container>h2{font-size:30px; margin-bottom:30px; font-weight:700;}
+#login-page .form-control{margin:10px 0; font-size:14px; height:42px;}
+#login-page .btn-login{margin:10px 0 20px; font-size:20px; font-weight:700;padding:10px 16px}
+#login-page .alert{text-align:left; color:#f00;}
+.navbar{min-height:75px;}
+.container-fluid{max-width:1340px; min-width:1000px;}
+.navbar.navbar, .navbar-default.navbar{box-shadow:0 1px 8px 0 #ccc}
+.navbar .navbar-nav>li>a{padding:0 15px; line-height:75px; font-weight:700; font-size:14px; text-transform:capitalize;}
+.navbar.navbar .dropdown-menu li>a, .navbar-default.navbar .dropdown-menu li>a{font-size:14px;}
+#header .user-setting>a{font-weight:400;font-size:12px;}
+.breadcrumb{padding:8px 0; background:none;}
+.container{width:100%; margin:0; padding:0;}
+.panel-default>.panel-heading{background:none; border-bottom: 1px solid #ddd; padding:8px 20px 15px;}
+.panel-default>.panel-heading .panel-title{min-height:40px; font-size:30px;font-weight:700; padding-top:8px;}
+
+#login-page{background:#00cdcf none; height:100vh}
+#login-page .logo{background:url(../images/logo.png) no-repeat 20px 0; margin:20px; text-indent:-9999em; height:30px;}
+#login-page .card-container{background:#fff none; max-width:410px; margin:10% auto 0; padding:20px 40px 30px; text-align:center; display:block;}
+#login-page .card-container>h2{font-size:30px; margin-bottom:30px; font-weight:700;}
+#login-page .form-control{margin:10px 0; font-size:14px; height:42px;}
+#login-page .btn-login{margin:10px 0 20px; font-size:20px; font-weight:700;padding:10px 16px}
+#login-page .alert{text-align:left; color:#f00;}
