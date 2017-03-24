@@ -9,5 +9,9 @@ const translations = {
             "email" : "Please input your email",
             "password" : "Please input your password"
         }
+    },
+
+    "user" : {
+    	"invalid.email" : "This email is not exist"
     }
 };

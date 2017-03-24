@@ -4,22 +4,46 @@
 <head>
 	<title update-title></title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
 
-	<link rel="stylesheet" media="screen" href="./app/views/assets/stylesheets/bootstrap.min.css">
-	<link rel="stylesheet" media="screen" href="./app/views/assets/stylesheets/main.css">
-	<link rel="stylesheet" media="screen" href="./app/views/assets/stylesheets/material.min.css">
-	<link rel="stylesheet" media="screen" href="./app/views/assets/stylesheets/ripples.min.css">
-	<link rel="stylesheet" media="screen" href="./app/views/assets/stylesheets/roboto.min.css">
-	<link rel="stylesheet" media="screen" href="./app/views/assets/stylesheets/layout.css">
+	<link rel="stylesheet" media="screen" href="bower_components/angular-ui-grid/ui-grid.min.css">
+  <link rel="stylesheet" media="screen" href="./app/views/assets/stylesheets/bootstrap.min.css">
+  <link rel="stylesheet" media="screen" href="./app/views/assets/stylesheets/main.css">
+  <link rel="stylesheet" media="screen" href="./app/views/assets/stylesheets/material.min.css">
+  <link rel="stylesheet" media="screen" href="./app/views/assets/stylesheets/ripples.min.css">
+  <link rel="stylesheet" media="screen" href="./app/views/assets/stylesheets/roboto.min.css">
+  <link rel="stylesheet" media="screen" href="./app/views/assets/stylesheets/layout.css">
+  <link rel="stylesheet" media="screen" href="./app/views/assets/stylesheets/style.css">
+  <link rel="stylesheet" media="screen" href="./app/views/assets/stylesheets/custom.css">
+  <link rel="stylesheet" media="screen" href="/app/views/assets/stylesheets/introjs.min.css">
+  <link rel="stylesheet" media="screen" href="/app/views/assets/stylesheets/calendar.css">
+  <link rel="stylesheet" media="screen" href="/app/views/assets/stylesheets/designer-ranking.css">
+
+  <link rel="shortcut icon" type="image/png" href="/app/views/assets/images/favicon.png">
+  <link rel="stylesheet" media="screen" href="/app/views/assets/stylesheets/select2.css">
+  <link rel="stylesheet" media="screen" href="/app/views/assets/stylesheets/notification.css">
+  <link rel="stylesheet" media="screen" href="/app/views/assets/stylesheets/spectrum.css">
+  <link rel="stylesheet" media="screen" href="/app/views/assets/stylesheets/chosen.min.css">
+  <link rel="stylesheet" media="screen" href="/app/views/assets/stylesheets/daterangepicker.css">
 
 	<script type="text/javascript" src="./node_modules/angular/angular.js"></script>
+	<script type="text/javascript" src="./node_modules/lodash/lodash.js"></script>
 	<script type="text/javascript" src="./node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
 	<script type="text/javascript" src="./bower_components/angular-translate/angular-translate.js"></script>
 	<script type="text/javascript" src="./bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+	<script type="text/javascript" src="./bower_components/angular-resource/angular-resource.min.js"></script>
+	<script type="text/javascript" src="./bower_components/angular-ui-grid/ui-grid.js"></script>
+
 	<script type="text/javascript" src="./app/app.js"></script>
-	<script type="text/javascript" src="./app/applications/controllers/Controller.js.js"></script>
+	<script type="text/javascript" src="./app/applications/controllers/Controller.js"></script>
 	<script type="text/javascript" src="./app/applications/controllers/AuthController.js"></script>
 	<script type="text/javascript" src="./app/applications/controllers/UserController.js"></script>
+	<script type="text/javascript" src="./app/domain/models/Model.js"></script>
+	<script type="text/javascript" src="./app/domain/models/User.js"></script>
+	<script type="text/javascript" src="./app/domain/repositories/Repository.js"></script>
+	<script type="text/javascript" src="./app/domain/repositories/UserRepository.js"></script>
+	<script type="text/javascript" src="./app/infrastructures/resources/Resource.js"></script>
+	<script type="text/javascript" src="./app/infrastructures/resources/UserResource.js"></script>
 	<script type="text/javascript" src="./app/infrastructures/i18n/translations.en.js"></script>
 
 	<base href="/"/>

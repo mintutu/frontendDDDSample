@@ -13,12 +13,13 @@
   "scripts": {
   	"postinstall": "bower install",
   	"pretest": "npm install"
-  }, 
+  },
   "dependencies": {
   	"angular": "1.5.11",
   	"angular-ui-router": "^0.4.2",
   	"bootstrap": "^3.3.7",
   	"grunt": "^1.0.1",
-  	"grunt-cli": "^1.2.0"
+  	"grunt-cli": "^1.2.0",
+    "lodash": "^4.17.4"
   }
 }

@@ -1,2 +1,2 @@
 'use strict';
-var application = angular.module('sactory.controller', []);
+var application = angular.module('sample.controller', []);

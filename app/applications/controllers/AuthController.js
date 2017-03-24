@@ -1,6 +1,7 @@
 'use strict';
 
-bbs.controller('AuthCtrl', ['$scope', '$http', function($scope, $http){
+bbs.controller('AuthCtrl', ['$scope', '$http', '$translate', '$state',
+function($scope, $http, $translate, $state){
 	$scope.isShowForm = true;
 	$scope.processLogin = function() {
 		$scope.msg = '';
@@ -12,10 +13,12 @@ bbs.controller('AuthCtrl', ['$scope', '$http', function($scope, $http){
 		$http.post(bbs.apiPrefix + '/user/auth', data)
 			.then(function successCallBack(res) {
 				if (res.data.success) {
-					$scope.msg = res.message;
+					$state.go("user-list"); // Go to index
+				} else {
+					$scope.msg = $translate.instant(res.data.message);
 				}
 			}, function errorCallBack (error) {
-				$scope.msg = error.data;
+				$scope.msg = error.data.message;
 			});
 	};
 }]);

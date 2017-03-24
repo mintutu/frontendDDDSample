@@ -16,8 +16,10 @@
     "tests"
   ],
   "dependencies": {
-    "angular-translate": "^2.15.0",
-    "angular-translate-loader-static-files": "^2.15.0",
-    "angular-translate-loader-url": "^2.15.0"
+    "angular-translate": "^2.14.0",
+    "angular-translate-loader-static-files": "^2.14.0",
+    "angular-translate-loader-url": "^2.14.0",
+    "angular-resource": "1.5.11",
+    "angular-ui-grid": "^4.0.2"
   }
 }
